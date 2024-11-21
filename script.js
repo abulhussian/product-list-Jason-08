@@ -383,6 +383,7 @@ body.classList.remove("overflow-hidden");
 confirmOrderBtn.addEventListener("click", function (e) {
   billCart.classList.add("hidden");
   orderConfirmCard.classList.remove("hidden");
+  body.classList.add("overflow-hidden");
 });
 newOrderBtn.addEventListener("click", function (e) {
   window.location.reload();

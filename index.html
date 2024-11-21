@@ -12,11 +12,11 @@
   <title> Product list with cart</title>
 </head>
 
-<body class="bg-Rose50 relative  ">
+<body class="bg-Rose50 relative overflow-hidden ">
 
   <!-- order-confirm-card -->
   <div
-    class=" top-0 left-0 overflow-hidden confirm-order-card bg-black bg-opacity-20 sticky hidden backdrop-blur-md flex md:justify-center md:items-center w-screen h-auto pb-10 z-50 ">
+    class=" top-0 left-0  confirm-order-card bg-black bg-opacity-20 sticky hidden backdrop-blur-md flex md:justify-center md:items-center w-screen h-screen  z-50 ">
     <div class="conatiner  bg-white w-full md:max-w-md flex flex-col  p-7   rounded-xl ">
       <!-- img tick svg -->
       <img src="./assets/images/icon-order-confirmed.svg" alt="" class="w-8 h-8">
@@ -24,7 +24,7 @@
       <h1 class="md:text-2xl text-xl max-w-xs md:max-w-md text-Rose900 font-semibold mt-3">Order confirmed</h1>
       <!-- text -->
       <p class="text-Rose500 text-xs mt-2 ">We hope you enjoy your food!</p>
-      <div class="confirmed-order"></div>
+      <div class="confirmed-order max-h-64 overflow-y-auto"></div>
       <!-- bill items1 -->
       <!-- order total -->
       <div class="total flex flex-row justify-between mt-5 md:mt-10">
@@ -76,7 +76,7 @@
         <h1 class=" text-Red font-semibold text-xl ">Your cart( <span class="bill-cart-count">0</span>)</h1>
         <div class="total flex flex-col ">
           <!-- heading -->
-          <div class="desserts-bill flex flex-col ">
+          <div class="desserts-bill flex flex-col  max-h-64 overflow-y-auto">
 
 
           </div>
