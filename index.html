@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" tycpe="image/png" sizes="32x32"
+    href="./product-list-with-cart-main (2)/product-list-with-cart-main/assets/images/">
+  <title> Product list with cart</title>
+</head>
+
+<body class="bg-Rose50 relative  ">
+
+  <!-- order-confirm-card -->
+  <div
+    class=" top-0 left-0 overflow-hidden confirm-order-card bg-black bg-opacity-20 sticky hidden backdrop-blur-md flex md:justify-center md:items-center w-screen h-auto pb-10 z-50 ">
+    <div class="conatiner  bg-white w-full md:max-w-md flex flex-col  p-7   rounded-xl ">
+      <!-- img tick svg -->
+      <img src="./assets/images/icon-order-confirmed.svg" alt="" class="w-8 h-8">
+      <!-- heading -->
+      <h1 class="md:text-2xl text-xl max-w-xs md:max-w-md text-Rose900 font-semibold mt-3">Order confirmed</h1>
+      <!-- text -->
+      <p class="text-Rose500 text-xs mt-2 ">We hope you enjoy your food!</p>
+      <div class="confirmed-order"></div>
+      <!-- bill items1 -->
+      <!-- order total -->
+      <div class="total flex flex-row justify-between mt-5 md:mt-10">
+        <!-- heading -->
+        <h1 class="text-Rose500">Order Total</h1>
+        <!-- total bill -->
+        <h1 class="order-confirm-total text-Rose900 font-semibold text-md md:text-3xl">$0.00</h1>
+      </div>
+      <div class="btn mt-5 md:mt-10">
+        <button
+          class=" new-order-btn w-full py-1 md:py-3 rounded-full  bg-Red hover:bg-Rose500 text-white text-xl font-semibold">
+          Start New
+          Order</button>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- desserts grid display -->
+  <div class="p-4">
+
+    <div class="flex flex-col gap-4 container mx-auto w-full md:my-14 my-10 md:flex-row">
+
+      <h1 class="text-3xl font-bold text-Rose900 ml-4 absolute">Desserts</h1>
+      <div class="grid md:grid-cols-3 md:w-3/5 p-2 bg-lightest gap-x-5 gap-y-8 mt-14 main-cont ">
+
+      </div>
+    </div>
+  </div>
+  <!-- empty cart -->
+  <div class="md:absolute top-5 right-52 w-full md:w-1/4 ">
+    <div class="empty-cart    ">
+      <div class="container-r h-mx-auto bg-white flex flex-col mt-10 p-5 ">
+        <!-- heading -->
+        <h1 class=" text-Red font-semibold">Your cart</h1>
+        <div class="img flex flex-col justify-center items-center">
+          <!-- img cake empty cart -->
+          <img src="./assets/images/illustration-empty-cart.svg" alt="">
+          <!-- text -->
+          <p class="text-Rose400"> Your added items will appear here</p>
+        </div>
+      </div>
+    </div>
+    <div class="bill-cart w-full md:w-full hidden ">
+      <div class="bill-card container rounded-md max-h-auto bg-white   p-5 flex flex-col">
+        <!-- heading -->
+        <h1 class=" text-Red font-semibold text-xl ">Your cart( <span class="bill-cart-count">0</span>)</h1>
+        <div class="total flex flex-col ">
+          <!-- heading -->
+          <div class="desserts-bill flex flex-col ">
+
+
+          </div>
+
+        </div>
+        <div class="ordertotal flex flex-row justify-between mt-10">
+          <h1 class="text-Rose500">Order Total</h1>
+          <!-- total bill -->
+          <h1 class="grandtotal text-Rose900 font-semibold text-md md:text-xl">$00.00</h1>
+        </div>
+        <!-- carbon netural -->
+        <div class="carbon-line flex flex-row gap-2 mt-4">
+          <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+          <p class="text-Rose500 text-xs md:text-md">This is a <span class="text-Rose900">carbon neutral
+            </span>delivery
+          </p>
+        </div>
+        <!-- button  -->
+        <div class="btn mt-10">
+          <button
+            class=" confirm-order-btn w-full py-3 rounded-full  bg-Red hover:bg-Rose500 text-white text-xl font-semibold">
+            Confirm
+            Order</button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+
+
+
+</body>
+
+</html>
